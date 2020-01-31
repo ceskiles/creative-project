@@ -19,11 +19,6 @@ body {
   background-color: #f4f4f4;
 }
 
-hr {
-  width: 80%;
-  border-bottom: var(--dusty-blue) double 5px;
-}
-
 .content {
   max-width: 1000px;
   height: 100%;
@@ -50,6 +45,9 @@ hr {
   flex-direction: column;
   width: 100%;
   align-items: left;
+  border-radius: 3em;
+  border-top: var(--dusty-blue) solid 1px;
+  border-bottom: var(--dusty-blue) double 5px;
 }
 
 .collapse {
@@ -72,11 +70,12 @@ hr {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: var(--dark-grey) !important;
+  color: var(--dark-grey);
 }
 
-.active>.nav-link {
+.navbar-light .navbar-nav .active .nav-link {
   color: var(--dusty-blue) !important;
+  padding-bottom: .1em;
   border-bottom: var(--dusty-blue) dotted 2px;
 }
 
@@ -86,12 +85,23 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 1em;
+  justify-content: space-between;
+  margin-top: 3em;
+  color: var(--dusty-blue);
 }
 
 .invitation>* {
-  margin: .5em;
+  margin: .1em;
+}
+
+.invitation-names {
+  color: var(--dark-grey);
+  text-align: center;
+  padding: .5em 0 0 1em;
+  margin: 3em;
+  border-top: var(--dark-grey) solid 1px;
+  border-bottom: var(--dark-grey) solid 1px;
+  border-radius: 2em 0 2em 0;
 }
 
 .invitation>p {
@@ -99,14 +109,61 @@ hr {
 }
 
 .invitation-fancy-text {
-  border-bottom: var(--dark-grey) solid 1px;
-  border-top: var(--dark-grey) solid 1px;
+  border-bottom: var(--dusty-blue) solid 1px;
+  border-top: var(--dusty-blue) solid 1px;
   padding-left: 5%;
   padding-right: 5%;
   font-style: italic;
+  color: var(--dusty-blue);
 }
 
-.date>h1 {
-  margin: 0em;
-  text-align: center;
+.date {
+  width: 40%;
+  height: 11em;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 25% 25% 25% 25%;
+  color: var(--dark-grey);
+  margin: 2em;
+}
+
+.M {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  font-size: 6em;
+}
+
+.ay {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 2.4em;
+  position: relative;
+  bottom: .7em;
+  left: .3em;
+}
+
+.ninth {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 2.8em;
+  position: relative;
+  bottom: .8em;
+  left: .25em;
+}
+
+.ninth>.invitation-fancy-text {
+  font-style: italic;
+  font-size: .6em;
+  position: relative;
+  bottom: .15em;
+  border-color: var(--dark-grey);
+  color: var(--dark-grey);
+}
+
+.year {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  font-size: 3em;
+  position: relative;
+  top: .1em;
 }
