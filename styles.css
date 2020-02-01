@@ -79,6 +79,31 @@ body {
   border-bottom: var(--dusty-blue) dotted 2px;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registry {
+  color: var(--dark-grey);
+  text-decoration: none;
+  margin-left: 2em;
+}
+
+.footer .registry:hover {
+  color: var(--dusty-blue);
+}
+
+.footer>a>img {
+  width: 3em;
+  margin-right: 2em;
+}
+
 /* Invitation */
 .invitation {
   width: 50%;
