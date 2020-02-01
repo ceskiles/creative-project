@@ -49,7 +49,7 @@ body {
 .page-image {
   margin: 1.3em;
   width: 80%;
-  border: var(--rose-mauve) solid 4px;
+  border: var(--dusty-blue) solid 3px;
 }
 
 /*    Menu    */
@@ -288,4 +288,22 @@ body {
   color: var(--dark-grey);
   margin-top: 0em;
   margin-bottom: 0em;
+}
+
+/*    Photos Page   */
+.image-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 1.3em;
+}
+
+.image-grid>img {
+  width: 50%;
+  border: var(--dusty-blue) solid 3px;
+}
+
+.image-grid>.large {
+  width: 100%
 }
