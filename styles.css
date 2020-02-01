@@ -307,3 +307,69 @@ body {
 .image-grid>.large {
   width: 100%
 }
+
+/*   RSVP page  */
+.rsvp-form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-top: 1em;
+}
+
+.form-field>h1 {
+  font-size: 1.5em;
+}
+
+.input-field {
+  border: var(--dark-grey) solid 1px;
+  background-color: #f4f4f4;
+  margin-left: 2em;
+  padding: 0 10px 0 10px;
+  color: #a0a0a0;
+  font-size: 1em;
+  border-radius: 12px;
+}
+
+.small-text {
+  width: 30%
+}
+
+.large-text {
+  height: 200px;
+}
+
+.quantity {
+  color: var(--dark-grey);
+  width: 70px;
+}
+
+.input-field>.vr {
+  border-left: var(--dark-grey) solid 1px;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.check-box {
+  margin-right: 1em;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4em;
+}
+
+.button>.input-field {
+  color: var(--dark-grey);
+  width: 5em;
+}
+
+.button>.input-field:hover {
+  background-color: #a0a0a0;
+  color: #000000;
+  cursor: no-drop;
+}
