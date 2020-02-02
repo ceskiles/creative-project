@@ -16,7 +16,6 @@ body {
   font-size: 18px;
   font-family: "Bookman Old Style";
   color: var(--dark-grey);
-  margin: 100px;
   background-color: #f4f4f4;
 }
 
@@ -30,6 +29,12 @@ body {
   align-items: center;
   background-color: #ffffff;
   border: #e0e0e0 solid 2px;
+}
+
+@media only screen and (min-width:991px) {
+  .content {
+    margin-top: 100px;
+  }
 }
 
 .content>hr {
@@ -49,6 +54,7 @@ body {
 .page-image {
   margin: 1.3em;
   width: 80%;
+  min-width: 500px;
   border: var(--dusty-blue) solid 3px;
 }
 
@@ -56,15 +62,16 @@ body {
 .navbar {
   flex-direction: column;
   width: 100%;
-  align-items: left;
   border-radius: 3em;
-  border-top: var(--dusty-blue) solid 1px;
-  border-bottom: var(--dusty-blue) double 5px;
 }
 
-.collapse {
+.navbar-collapse {
   width: 100%;
   justify-content: center;
+}
+
+.navbar-toggler {
+  align-self: flex-start;
 }
 
 .navbar-nav {
@@ -89,6 +96,13 @@ body {
   color: var(--dusty-blue) !important;
   padding-bottom: .1em;
   border-bottom: var(--dusty-blue) dotted 2px;
+}
+
+@media only screen and (min-width:992px) {
+  .navbar {
+    border-top: var(--dusty-blue) solid 1px;
+    border-bottom: var(--dusty-blue) double 5px;
+  }
 }
 
 /* Footer */
@@ -160,7 +174,7 @@ body {
 }
 
 .date {
-  width: 40%;
+  width: auto;
   height: 11em;
   display: grid;
   grid-template-columns: 50% auto;
@@ -181,7 +195,7 @@ body {
   font-size: 2.4em;
   position: relative;
   bottom: .7em;
-  left: .3em;
+  left: -0.1em;
 }
 
 .ninth {
@@ -190,7 +204,7 @@ body {
   font-size: 2.8em;
   position: relative;
   bottom: .8em;
-  left: .25em;
+  left: -.1em;
 }
 
 .ninth>.invitation-fancy-text,
@@ -213,10 +227,10 @@ body {
 }
 
 /* Events */
-.vr {
-  height: 80%;
+.events>.vr {
+  height: stretch;
   margin-top: 2em;
-  width: 0;
+  width: 0px;
   border-left: var(--rose-mauve) solid 1px;
 }
 
@@ -226,15 +240,29 @@ body {
 }
 
 .events {
-  width: 100%;
-  height: 100%;
+  width: 80%;
   display: flex;
+  justify-content: space-between;
   padding: 0;
   margin-bottom: 3em;
 }
 
 .event {
   justify-content: flex-start;
+  width: 400px;
+}
+
+@media only screen and (max-width:815px) {
+  .events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .events>.vr {
+    height: 0;
+    width: 80%;
+    border-bottom: var(--rose-mauve) solid 1px;
+  }
 }
 
 .event>h1 {
@@ -259,7 +287,7 @@ body {
 }
 
 .small {
-  width: 27%;
+  width: auto;
   font-size: 10px;
   margin: 1em;
   margin-top: 1em;
@@ -267,12 +295,8 @@ body {
   left: 1em;
 }
 
-.small>.ay {
-  left: -.25em;
-}
-
 .small>.ninth {
-  left: -.25em;
+  left: -0.1em;
 }
 
 .fifteenth {
@@ -281,7 +305,7 @@ body {
   font-size: 2em;
   position: relative;
   bottom: .8em;
-  left: -.5em;
+  left: -0.2em;
 }
 
 .time {
@@ -295,6 +319,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-width: 500px;
   width: 90%;
   padding: 1.3em;
 }
@@ -306,6 +331,26 @@ body {
 
 .image-grid>.large {
   width: 100%
+}
+
+@media only screen and (max-width:991px) {
+  .image-page-content {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-grid {
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .image-grid>img {
+    width: 100%;
+  }
 }
 
 /*   RSVP page  */
@@ -331,10 +376,11 @@ body {
   color: #a0a0a0;
   font-size: 1em;
   border-radius: 12px;
+  cursor: no-drop;
 }
 
 .small-text {
-  width: 30%
+  width: 250px;
 }
 
 .large-text {
@@ -356,20 +402,29 @@ body {
   margin-right: 1em;
 }
 
-.button {
+.submit-button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   margin-top: 4em;
 }
 
-.button>.input-field {
+.submit-button>.input-field {
   color: var(--dark-grey);
   width: 5em;
 }
 
-.button>.input-field:hover {
+.submit-button>.input-field:hover {
   background-color: #a0a0a0;
   color: #000000;
-  cursor: no-drop;
+}
+
+@media only screen and (max-width:600px) {
+  .input-field {
+    margin-left: 0;
+  }
+
+  .submit-button {
+    justify-content: flex-start;
+  }
 }
