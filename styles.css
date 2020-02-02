@@ -49,6 +49,7 @@ body {
   margin: 1em;
   margin-bottom: .5em;
   text-decoration: none;
+  text-align: center;
 }
 
 .page-image {
@@ -108,7 +109,7 @@ body {
 /* Footer */
 .footer {
   display: flex;
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
   padding: 10px;
   align-items: center;
@@ -161,6 +162,7 @@ body {
 
 .invitation>p {
   font-size: 1.2em;
+  text-align: center;
 }
 
 .invitation-fancy-text {
@@ -171,6 +173,7 @@ body {
   font-style: italic;
   color: var(--dusty-blue);
   margin: 1em;
+  text-align: center;
 }
 
 .date {
