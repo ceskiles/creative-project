@@ -431,3 +431,17 @@ body {
     justify-content: flex-start;
   }
 }
+
+.addeventatc {
+  margin-top: 2em;
+  padding: 13px 12px 12px 13px !important;
+}
+
+.addeventatc>span {
+  color: var(--rose-mauve);
+}
+
+.addeventatc_icon {
+  display: none;
+  width: 0;
+}
