@@ -118,11 +118,15 @@ body {
 
 .registry {
   color: var(--dark-grey);
-  text-decoration: none;
   margin-left: 2em;
 }
 
-.footer .registry:hover {
+.registry>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer .registry>a:hover {
   color: var(--dusty-blue);
 }
 
