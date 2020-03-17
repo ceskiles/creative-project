@@ -333,6 +333,7 @@ body {
 
 .image-grid>img {
   width: 50%;
+  height: 100%;
   border: var(--dusty-blue) solid 3px;
 }
 
