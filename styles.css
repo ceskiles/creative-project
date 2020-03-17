@@ -450,3 +450,19 @@ body {
   display: none;
   width: 0;
 }
+
+/* Virus Alert Banner */
+#updates {
+  margin: 1cm;
+}
+
+#alerts>li {
+  max-width: 1000px;
+  margin-top: 1cm;
+  padding: .75cm;
+  border: crimson 2px solid;
+  background-color: lightcoral;
+  border-radius: 1cm;
+  color: black;
+  list-style: none;
+}
