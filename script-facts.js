@@ -2,7 +2,10 @@ function may9thHover(e) {
   e.preventDefault();
   generateFact('may-ninth-grid', "5/9", "date");
 }
-
+function march28thHover(e) {
+  e.preventDefault();
+  generateFact('march-twenty-eighth-grid', "3/28", "date");
+}
 function may15thHover(e) {
   e.preventDefault();
   generateFact('may-fifteenth-grid', "5/15", "date");
@@ -46,6 +49,7 @@ function generateFact(elementId, number, type) {
 }
 
 document.getElementById('may-ninth-grid').addEventListener('mouseenter', may9thHover);
+document.getElementById('march-twenty-eighth-grid').addEventListener('mouseenter', march28thHover);
 document.getElementById('may-fifteenth-grid').addEventListener('mouseenter', may15thHover);
 document.getElementById('4').addEventListener('mouseenter', fourHover);
 document.getElementById('5').addEventListener('mouseenter', fiveHover);
