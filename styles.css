@@ -223,7 +223,7 @@ body {
   left: -0.5em;
 }
 
-.twenty-eighth {
+.twenty-fifth {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   font-size: 2.8em;
@@ -233,7 +233,7 @@ body {
 }
 
 .ninth>.invitation-fancy-text,
-.twenty-eighth>.invitation-fancy-text,
+.twenty-fifth>.invitation-fancy-text,
 .fifteenth>.invitation-fancy-text {
   font-style: italic;
   font-size: .6em;
