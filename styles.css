@@ -475,7 +475,7 @@ body {
   margin: 1cm;
 }
 
-#alerts>li {
+.alerts>li {
   max-width: 1000px;
   margin-top: 1cm;
   padding: .75cm;
